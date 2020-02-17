@@ -1,0 +1,1 @@
+web: gunicorn starmymovie2.wsgi --log-file -

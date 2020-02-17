@@ -1,0 +1,163 @@
+input, textarea {
+  padding: 10px;
+  margin: 8px 8px;
+  font-size: 0.8em;
+}
+
+h2 {
+  margin: 0;
+  margin-bottom: 5px;
+  font-size: 2em;
+  color: lightgrey;
+  text-shadow: 2px 2px 2px #000000;
+  z-index: 2;
+}
+
+h2 span.fa {
+  color: rgba(255, 255, 0);
+  transform: rotate(-30deg);
+  margin-right: -5px;
+}
+
+button {
+  color: #444444;
+  background-color: #f3f3f3f3;
+  padding: 5px 10px;
+  border-radius: 2px;
+  font-weight: bold;
+  font-size: 0.8em;
+  outline: none;
+  margin: 10px;
+  cursor: pointer;
+}
+
+button:disabled {
+  color: #8b8b8bf3;
+  background-color: #444444;
+  cursor: default;
+}
+
+.Login {
+  text-align: center;
+  background-color: #282c34;
+  color: white;
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.Login h2, input {
+  margin-bottom: 15px;
+}
+
+.login-input {
+  width: 40%;
+}
+
+.login-button {
+  width: 15%;
+}
+
+.signup {
+  font-weight: bold;
+  text-shadow: 2px 2px 2px #000000;
+  cursor: pointer;
+}
+
+.App {
+  text-align: center;
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  width: 100%;
+}
+
+.layout {
+  display: flex;         
+  flex-direction: row;
+  align-items: left;
+  justify-content: center;
+  width: 50%;
+  border: 2px solid rgba(128, 128, 128, 0.3);
+  border-radius: 15px;
+  box-shadow: 1px 1px 2px white;
+}
+
+.movie-list {
+  width: 35%;
+  cursor: pointer;
+  border-right: 2px solid rgba(119, 119, 116, 0.1);
+  padding-top: 20px;
+}
+
+.plus {
+  color: yellow;
+}
+
+.movie-details {
+  width: 65%;
+}
+
+.movie-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  font-size: 1.2em;
+}
+
+.movie-item span {
+  display: flex;
+  justify-content: space-evenly;
+  font-size: 0.95em;
+}
+
+.movie-title {
+  width: 50%;
+}
+
+.movie-icons {
+  width: 50%;
+}
+
+.movie-edit {
+  width: 100%;
+}
+
+.yellow {
+  color: yellow;
+}
+
+.rate {
+  border-top: 2px solid rgba(119, 119, 116, 0.1);
+}
+
+.rate span.fa {
+  cursor: pointer;
+  margin-bottom: 30px;
+}
+
+.fa-trash {
+  color: gray;
+}
+
+@media all and (max-width: 664px) {
+  .layout {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .movie-list, .movie-details, .movie-item {
+    width: 100%;
+  }
+
+  .movie-details {
+    border-top: 2px solid rgba(119, 119, 116, 0.2);
+  }
+}
